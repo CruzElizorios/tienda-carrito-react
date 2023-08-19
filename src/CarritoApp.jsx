@@ -1,7 +1,20 @@
+import { Navigate, Route, Routes } from "react-router-dom"
+import NavBar from "./components/NavBar"
+import { CarritoPage } from "./pages/CarritoPage"
+import { ComprasPage } from "./pages/ComprasPage"
 
 const CarritoApp = () => {
   return (
-    <div>CarritoApp</div>
+    <>
+      <NavBar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<ComprasPage />}></Route>
+          <Route path="/carrito" element={<CarritoPage />}></Route>
+          <Route path="/*" element={<Navigate to='/' />}></Route>
+        </Routes>
+      </div>
+    </>
   )
 }
 

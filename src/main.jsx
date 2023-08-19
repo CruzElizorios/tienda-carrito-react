@@ -2,9 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import CarritoApp from './CarritoApp'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <CarritoApp />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <CarritoApp />
+    </React.StrictMode>
+  </BrowserRouter>
 )
