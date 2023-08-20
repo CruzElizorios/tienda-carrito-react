@@ -16,7 +16,7 @@ export const Card = ({ imagen, titulo, descripcion, precio }) => {
 
     return (
         <>
-            <div className="card tarjeta" style={{width: '15rem'}}>
+            <div className="card tarjeta" style={{width: '12rem'}}>
                 <img src={imagen} className="card-img-top" alt={titulo}/>
                     <div className="card-body">
                         <h5 className="card-title">{titulo}</h5>
