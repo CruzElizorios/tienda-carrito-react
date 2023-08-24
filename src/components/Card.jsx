@@ -3,14 +3,16 @@ import '../styles/card.css'
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
-export const Card = ({ imagen, titulo, descripcion, precio }) => {
+export const Card = ({ imagen, titulo, descripcion, precio, handleAgregar, handleQuitar, handleAumentar, handleDisminuir}) => {
     
     const [agregar, setAgregar] = useState(false)
     
     const clickAgregar = () => {
+        handleAgregar()
         setAgregar(true)
     }
     const clickquitar = () => {
+        handleQuitar()
         setAgregar(false)
     }
 
